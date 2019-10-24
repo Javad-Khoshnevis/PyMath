@@ -3,18 +3,16 @@ while 1 == 1 :
     num = input("Enter Your Number :")
     if (num > 1) :
         m = 2
-        for m in range(2,num) :
+        while 1 < m < num :
             b = divmod(num, m)
             a = b[1]
             if (a != 0) :
                 m = m + 1
             else :
                 print num, "by", m, "is divisible!"
-                continue
-        else :
-            print("This is a prime number !")  
-
-
+                break
+        else:
+            print("this is a prime number!")
         y = 1
         n = 2
         done = input("Do you have another question? (y/n)")
